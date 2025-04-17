@@ -1,0 +1,32 @@
+{
+  "name": "docbase-mcp",
+  "version": "1.0.0",
+  "description": "DocBase API for MCP",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "docbase_mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "docbase",
+    "mcp",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2"
+  }
+}
