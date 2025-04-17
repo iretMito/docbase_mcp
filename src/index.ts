@@ -178,7 +178,6 @@ server.tool(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.info('Docbase MCP Server running on stdin/stdout');
 }
 
 main().catch((error) => {
